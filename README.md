@@ -1,8 +1,9 @@
 # 畳み込みニューラルネットワークを用いた手書きひらがなの予測
 
+## このコードについて  
 畳み込みニューラルネットワークCNNを用い、手書きひらがなの予測をします。
 
-# ファイル内容  
+## ファイル内容  
 * classmapping.csv  
     新たなラベル・JISコード・ひらがなを内包
 * Preprocess.ipynb  
@@ -11,6 +12,5 @@
    CNNの定義を記載
 * train.ipynb  
     Model.pyで設定したCNNモデルとPreprocess.ipynbで作成したNamPy配列'hira.npz'から訓練を行う。
-    
-    
-*
+* Prediction.ipynb  
+    train.ipynbで構築したモデルから、実際に手書きひらがなの予測を行う。予測する画像は'pre_data'に入っている。
