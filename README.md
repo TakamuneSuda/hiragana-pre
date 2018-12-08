@@ -8,11 +8,11 @@
     新たなラベル・JISコード・ひらがなを内包
 * [Preprocess.ipynb](https://github.com/TakamuneSuda/hiragana-pre/blob/master/Preprocess.ipynb)  
     手書きひらがなデータベースETL8Gを学習可能なNamPy配列に前処理する。  
-* Model.py  
+* [Model.py](https://github.com/TakamuneSuda/hiragana-pre/blob/master/Model.py)  
    CNNの定義を記載。
-* train.ipynb  
+* [Train.ipynb](https://github.com/TakamuneSuda/hiragana-pre/blob/master/Train.ipynb)  
     Model.pyで設定したCNNモデルとPreprocess.ipynbで作成したNamPy配列'hira.npz'から訓練を行う。
-* Prediction.ipynb  
+* [Prediction.ipynb](https://github.com/TakamuneSuda/hiragana-pre/blob/master/Predeiction.ipynb)  
     train.ipynbで構築したモデルから、実際に手書きひらがなの予測を行う。予測する画像は'pre_data'に入っている。
   
 ## 環境  
