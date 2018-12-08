@@ -4,7 +4,7 @@
 畳み込みニューラルネットワークCNNを用い、手書きひらがなの予測をします。精度は98.72%です。
 
 ## ファイル内容  
-* [classmapping.csv](https://github.com/TakamuneSuda/hiragana-pre/blob/master/classmaping.csv)  
+* [classmapping.csv](https://github.com/TakamuneSuda/hiragana-pre/blob/master/classmapping.csv)  
     新たなラベル・JISコード・ひらがなを内包
 * [Preprocess.ipynb](https://github.com/TakamuneSuda/hiragana-pre/blob/master/Preprocess.ipynb)  
     手書きひらがなデータベースETL8Gを学習可能なNamPy配列に前処理する。  
