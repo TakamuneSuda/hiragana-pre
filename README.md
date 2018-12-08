@@ -6,7 +6,7 @@
 ## ファイル内容  
 * classmapping.csv  
     新たなラベル・JISコード・ひらがなを内包
-* Preprocess.ipynb  
+* [Preprocess.ipynb](https://github.com/TakamuneSuda/hiragana-pre/blob/master/Preprocess.ipynb)  
     手書きひらがなデータベースETL8Gを学習可能なNamPy配列に前処理する。  
 * Model.py  
    CNNの定義を記載。
