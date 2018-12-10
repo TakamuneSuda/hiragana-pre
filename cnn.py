@@ -20,7 +20,7 @@ parser.add_argument('--image_file',
                     dest='image_file',
                     required=False)
 
-model_dir = '../model/etl8g_convnet_model'
+model_dir = './model/etl8g_convnet_model'
 
 # create Estimator object
 etl8g_classifier = tf.estimator.Estimator(
@@ -43,13 +43,13 @@ if args.mode == 'predict':
     predict_results = list(etl8g_classifier.predict(predict_input_fn))
     result = predict_results[0]['classes']
 
-    classmapping = pd.read_csv('../classmapping.csv', usecols=['ひらがな'], encoding='cp932')
+    classmapping = pd.read_csv('./classmapping.csv', usecols=['ひらがな'], encoding='cp932')
     print('画像のひらがなは「{}」です'.format(classmapping.iloc[result].ひらがな))
 
 
 elif args.mode == 'train':
     # load_data
-    hira = np.load('../hira.npz')
+    hira = np.load('./hira.npz')
     train_data, eval_data, train_labels, eval_labels = train_test_split(
         hira['data'], hira['labels'], stratify=hira['labels'], random_state=0)
 
