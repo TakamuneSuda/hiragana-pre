@@ -14,6 +14,8 @@
     Model.pyで設定したCNNモデルとPreprocess.ipynbで作成したNamPy配列'hira.npz'から訓練を行う。
 * [Prediction.ipynb](https://github.com/TakamuneSuda/hiragana-pre/blob/master/Predeiction.ipynb)  
     train.ipynbで構築したモデルから、実際に手書きひらがなの予測を行う。予測する画像は'pre_data'に入っている。
+* [cnn.py](https://github.com/TakamuneSuda/hiragana-pre/blob/master/cnn.py)  
+    modeをコマンドライン引数として指定することで、訓練・予測ができるプログラム。
   
 ## 環境  
 * Python 3.6.4 (Anaconda)
@@ -32,3 +34,14 @@
     'Model.py'で設定したモデルと前処理を行った'hira.npz'から実際に訓練を行う。予測ができるようにmodelディレクトリに保存する。  
 1. 予測  
     訓練済みモデルから実際に手書きひらがなの予測を行う.
+    
+## 追記  
+    modeを指定しコマンドラインで訓練, 予測できるプログラムを追加しました。  
+    
+    訓練モード  
+    koko`python3 cnn.py`as
+    
+    
+    
+    
+    
