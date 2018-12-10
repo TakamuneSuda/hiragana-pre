@@ -37,15 +37,17 @@
     
 ## 追記  
 modeを指定しコマンドラインで訓練, 予測できるプログラムを追加しました。  
-### 訓練モード  
+#### 訓練モード  
 コマンドライン引数のmodeにtrainを入れると訓練が行われる。  
 同ディレクトリ内にある'hira.npz'を使用し、60ループ×500step=300000回の学習が行われ、モデルは'etl8g_convnet_model'に保存される。  
 &nbsp;　`python3 cnn.py --mode=train`  
 
-### 予測モード  
+#### 予測モード  
 コマンドライン引数のmodeにpredictを入れると予測が行われる。  
 image_fileに予測させる画像を指定することで、訓練モードで学習したモデルから予測させたひらがなを出力する。  
 &nbsp;　`python3 cnn.py --mode=predict --image_file=./pre_data/1.png`  
+&nbsp;    　　　   <img src="https://i.imgur.com/Lx1QYVR.png" width="200px">  
+&nbsp; 　　　　　　./pre_data/1.png  
 &nbsp; 出力  
 &nbsp;　`画像のひらがなは「い」です`
     
