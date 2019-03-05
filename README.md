@@ -1,7 +1,7 @@
 # 畳み込みニューラルネットワークを用いた手書きひらがなの予測
 
 ## このコードについて  
-畳み込みニューラルネットワークCNNを用い、手書きひらがなの予測をします。精度は98.72%です。
+畳み込みニューラルネットワークCNNを用い、手書きひらがなの予測をします。精度は99.30%です。
 
 ## ファイル内容  
 * [classmapping.csv](https://github.com/TakamuneSuda/hiragana-pre/blob/master/classmapping.csv)  
